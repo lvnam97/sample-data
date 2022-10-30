@@ -1,6 +1,6 @@
 {
     "name": "Rubber",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/lvnam97/sample-data/main/ERC-metadata/erc1155/uprace/4.jpg",
     "decimals": 9,
     "description": "A pack of 50 rubber",
     "attributes": [

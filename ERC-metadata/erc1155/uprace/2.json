@@ -1,6 +1,6 @@
 {
     "name": "Fabric",
-    "image": "",
+    "image": "https://raw.githubusercontent.com/lvnam97/sample-data/main/ERC-metadata/erc1155/uprace/2.jpg",
     "decimals": 9,
     "description": "A pack of 50 fabric",
     "attributes": [
