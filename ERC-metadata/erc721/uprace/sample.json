@@ -1,0 +1,19 @@
+{
+  "name": "Sample Shoes",
+  "image": "http://uprace2-org.vcdn.vn/be/itemImg/item.png",
+  "description": "A human readable description of the item",
+  "attributes": [
+    {
+      "att_id": "1",
+      "att_name": "Bonus of stamina",
+      "value": 20,
+      "value_display": "20%"
+    },
+    {
+      "att_id": "2",
+      "att_name": "Magic boost",
+      "value": 10,
+      "value_display": "10%"
+    }
+  ]
+}
