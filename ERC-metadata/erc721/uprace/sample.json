@@ -1,6 +1,6 @@
 {
   "name": "Sample Shoes",
-  "image": "http://uprace2-org.vcdn.vn/be/itemImg/item.png",
+  "image": "https://raw.githubusercontent.com/lvnam97/sample-data/main/ERC-metadata/erc721/uprace/thumbnail.jpg",
   "description": "A human readable description of the item",
   "attributes": [
     {
