@@ -1,0 +1,21 @@
+{
+  "name": "5-Stars Top",
+  "image": "https://nft.com/ipfs/QmQAv9kCjLwDMHJpiY8f8uwz1kNumsDBKkDF4exeJs8Zw2",
+  "description": "A human readable description of the item",
+  "animation_url": "animation.mp4",
+  "external_url": "external.example.com",
+  "attributes": [
+    {
+      "att_id": "1",
+      "att_name": "Bonus of stamina",
+      "value": 20,
+      "value_display": "20%"
+    },
+    {
+      "att_id": "2",
+      "att_name": "Gold drop rate",
+      "value": 10,
+      "value_display": "10%"
+    }
+  ]
+}

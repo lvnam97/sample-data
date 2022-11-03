@@ -1,0 +1,20 @@
+{
+  "name": "Plastic",
+  "image": "https://game.example/item-id-8u5h2m.png",
+  "decimals": 9,
+  "description": "A pack of 50 plastic",
+  "attributes": [
+    {
+      "att_id": "1",
+      "att_name": "Packing",
+      "value": 50,
+      "value_display": "50"
+    },
+    {
+      "att_id": "2",
+      "att_name": "Material",
+      "value": 1,
+      "value_display": "Gold"
+    }
+  ]
+}
