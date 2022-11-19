@@ -6,6 +6,11 @@
     cd smartcontract
     npm i
 ```
+## Config with your wallet address
+1. Get Private Key From Seed Phrase
+    * Run command: ```npm run getPrivate {seed_phrase}```
+    * Ex: ```npm run getPrivate hehe haha gift glide once chunk menu dad slow payment huhu hihi```
+2. Edit hardhat.config.js file with your private key
 ## Useage
 ### Chain name
 * dev

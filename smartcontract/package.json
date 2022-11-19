@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "getPrivate": "node scripts/getPrivate.js",
     "deploy721-dev": "npx hardhat --network dev deploy721 --number ",
     "deploy721-avaxtest": "npx hardhat --network avaxtest deploy721 --number ",
     "deploy721-bsctest": "npx hardhat --network bsctest deploy721 --number ",

@@ -24,15 +24,15 @@ module.exports = {
   networks: {
     dev: {
       url: `https://rpc.dev.verichains.xyz`,
-      accounts: ["d62bb6ee1185760928be7ac485595d1b7b8f8224afec47b232d7da6eb860c209"]
+      accounts: ["your_private_key"]
     },
     bsctest: {
       url: `https://rpc.bsc-test.verichains.xyz`,
-      accounts: ["d62bb6ee1185760928be7ac485595d1b7b8f8224afec47b232d7da6eb860c209"]
+      accounts: ["your_private_key"]
     },
     avaxtest: {
       url: `https://rpc.avax-test.verichains.xyz`,
-      accounts: ["d62bb6ee1185760928be7ac485595d1b7b8f8224afec47b232d7da6eb860c209"]
+      accounts: ["your_private_key"]
     }
   }
 };
