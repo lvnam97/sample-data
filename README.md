@@ -14,7 +14,7 @@
 
 ### Deploy 721, 1155
 Command:
-    ```npm run deploy721-{chain_name} {number_of_contracts}```
+    ```npm run deploy721-{chain_name} {number_of_contracts}```<br/>
     ```npm run deploy1155-{chain_name} {number_of_contracts}```
 **Example**
 * Chain dev:
@@ -26,7 +26,7 @@ Command:
 
 ### Mint 721, 1155
 Command: 
-    ```npm run mint721-{chain_name} {contract_address} {number_of_nfts}```
+    ```npm run mint721-{chain_name} {contract_address} {number_of_nfts}```<br/>
     ```npm run mint1155-{chain_name} {contract_address} {number_of_nfts}```
 **Example**
 * Chain dev: 
