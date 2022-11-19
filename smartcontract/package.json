@@ -1,0 +1,29 @@
+{
+  "name": "smartcontract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy721-dev": "npx hardhat --network dev deploy721 --number ",
+    "deploy721-avaxtest": "npx hardhat --network avaxtest deploy721 --number ",
+    "deploy721-bsctest": "npx hardhat --network bsctest deploy721 --number ",
+    "deploy1155-dev": "npx hardhat --network dev deploy1155 --number ",
+    "deploy1155-avaxtest": "npx hardhat --network avaxtest deploy1155 --number ",
+    "deploy1155-bsctest": "npx hardhat --network bsctest deploy1155 --number ",
+    "mint721-dev": "npx hardhat --network dev mint721 ",
+    "mint721-avaxtest": "npx hardhat --network avaxtest mint721 ",
+    "mint721-bsctest": "npx hardhat --network bsctest mint721 ",
+    "mint1155-dev": "npx hardhat --network dev mint1155 ",
+    "mint1155-avaxtest": "npx hardhat --network avaxtest mint1155 ",
+    "mint1155-bsctest": "npx hardhat --network bsctest mint1155 "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "4.6.0"
+  }
+}
