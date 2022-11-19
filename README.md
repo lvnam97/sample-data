@@ -14,8 +14,8 @@
 
 ### Deploy 721, 1155
 **Command**
-    ```npm run deploy721-{chain_name} {number_of_contracts}```<br/>
-    ```npm run deploy1155-{chain_name} {number_of_contracts}```<br/>
+* ```npm run deploy721-{chain_name} {number_of_contracts}```
+* ```npm run deploy1155-{chain_name} {number_of_contracts}```
 **Example**
 * Chain dev:
     ```npm run deploy721-dev 5```
@@ -26,8 +26,8 @@
 
 ### Mint 721, 1155
 **Command** 
-    ```npm run mint721-{chain_name} {contract_address} {number_of_nfts}```<br/>
-    ```npm run mint1155-{chain_name} {contract_address} {number_of_nfts}```<br/>
+* ```npm run mint721-{chain_name} {contract_address} {number_of_nfts}```
+* ```npm run mint1155-{chain_name} {contract_address} {number_of_nfts}```
 **Example**
 * Chain dev: 
     ```npm run mint721-dev 0xE7cEdcbAB4BAe413B5C7c2BF09da9B7e7dd27775 5```
