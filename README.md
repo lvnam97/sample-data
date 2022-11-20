@@ -17,6 +17,10 @@
 * avaxtest
 * bsctest
 
+### Compile *.sol files
+```
+    npx hardhat compile
+```
 ### Deploy 721, 1155
 **Command**
 * ```npm run deploy721-{chain_name} {number_of_contracts}```
