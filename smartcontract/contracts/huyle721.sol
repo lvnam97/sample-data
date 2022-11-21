@@ -147,7 +147,7 @@ contract VNGCharacter is ERC721, AccessControl, ERC721Enumerable {
     super._beforeTokenTransfer(from, to, tokenId);
   }
 
-  function mintNFT(uint8 _gender, uint8 _hair, uint8 _eyeWear, uint8 _face, uint8 _outfit, string calldata _image, bytes memory _signature) public returns (uint256){
+  function mintNFT(uint8 _gender, uint8 _hair, uint8 _eyeWear, uint8 _face, uint8 _outfit, string calldata _image, bytes memory) public returns (uint256){
     claimers[msg.sender] = true;
     _tokenIds.increment();
     uint256 newItemId = _tokenIds.current();

@@ -46,3 +46,12 @@
         ```npm run mint721-avaxtest 0xF3d43c147a0A377B4Eae8A44B778b575C1b59d72 5```
 * Chain bsctest:
     ```npm run mint721-bsctest 0x6f822246D4351e05e7fAb3eAccE7256965BE9780 5```
+
+### Deploy, mint ERC20
+**Command**
+* Deploy ```npm run deploy20-{chain_name} {number_of_contracts}```
+* Mint ```npm run mint20-{chain_name} {contract_address} {amount} [forAddress]```
+
+**Example**
+* Deploy ```npm run deploy20-dev 2```
+* Mint ```npm run mint20-dev 0x7511A85F312Ca2DC0EFA725B46d7D26c083b414f 123```

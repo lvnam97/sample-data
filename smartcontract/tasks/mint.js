@@ -53,3 +53,21 @@ task("mint1155", "Mint 1155")
       await rs.wait();
     }
 });
+
+task("mintERC20", "Mint 20")
+  .addPositionalParam("contractAddress", "address of contract", "", types.string)
+  .addPositionalParam("number", "amount tokens", 1, types.int)
+  .addPositionalParam("for", "address of user", "", types.string)
+  .setAction(async (taskArgs, hre) => {
+    const [deployer] = await hre.ethers.getSigners();
+    console.log("Deploying contracts with the account:", deployer.address);
+    const erc20 = await hre.ethers.getContractFactory("TokenERC20Example");
+    const erc20Instance = erc20.attach(taskArgs.contractAddress);
+    
+    console.log(`Mint token of ${taskArgs.contractAddress}`);
+    let rs = await erc20Instance.mint(
+      taskArgs.for == "" ? deployer.address : taskArgs.for,
+      hre.ethers.utils.parseEther(taskArgs.number.toString()).toString()
+    );
+    await rs.wait();
+});

@@ -16,7 +16,13 @@
     "mint721-bsctest": "npx hardhat --network bsctest mint721 ",
     "mint1155-dev": "npx hardhat --network dev mint1155 ",
     "mint1155-avaxtest": "npx hardhat --network avaxtest mint1155 ",
-    "mint1155-bsctest": "npx hardhat --network bsctest mint1155 "
+    "mint1155-bsctest": "npx hardhat --network bsctest mint1155 ",
+    "deploy20-dev": "npx hardhat --network dev deployERC20 --number ",
+    "deploy20-avaxtest": "npx hardhat --network avaxtest deployERC20 --number ",
+    "deploy20-bsctest": "npx hardhat --network bsctest deployERC20 --number ",
+    "mint20-dev": "npx hardhat --network dev mintERC20 ",
+    "mint20-avaxtest": "npx hardhat --network avaxtest mintERC20 ",
+    "mint20-bsctest": "npx hardhat --network bsctest mintERC20 "
   },
   "author": "",
   "license": "ISC",

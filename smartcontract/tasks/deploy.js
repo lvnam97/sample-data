@@ -27,3 +27,17 @@ task("deploy1155", "Deploy 1155")
         await erc1155Deployed.deployed();
     }
 });
+
+task("deployERC20", "Deploy ERC20")
+  .addOptionalParam("number", "number of contracts", 1, types.int)
+  .setAction(async (taskArgs, hre) => {
+    const [deployer] = await hre.ethers.getSigners();
+    console.log("Deploying contracts with the account:", deployer.address);
+  
+    const erc20 = await hre.ethers.getContractFactory("TokenERC20Example");
+    for(let i = 1; i <= taskArgs.number; i++){
+        const erc20Deployed = await erc20.deploy(`Test${i}`, `T${i}`);  
+        console.log("ERC20 address:", erc20Deployed.address);
+        await erc20Deployed.deployed();
+    }
+});
