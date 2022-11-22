@@ -54,6 +54,24 @@ task("mint1155", "Mint 1155")
     }
 });
 
+task("mint1155Ver2", "Mint 1155")
+  .addPositionalParam("contractAddress", "address of contract", "", types.string)
+  .addPositionalParam("tokenId", "tokenId", 1, types.int)
+  .addPositionalParam("number", "number of nfts", 1, types.int)
+  .setAction(async (taskArgs, hre) => {
+    const [deployer] = await hre.ethers.getSigners();
+    console.log("Deploying contracts with the account:", deployer.address);
+    const erc1155 = await hre.ethers.getContractFactory("VNGHero1155");
+    const erc1155Instance = erc1155.attach(taskArgs.contractAddress);
+    
+    console.log(`Mint NFT of ${taskArgs.contractAddress}`);
+    for(i = 1; i <= taskArgs.number; i++){
+      console.log(`${i} Minting....`)
+      let rs = await erc1155Instance.mintVer2(taskArgs.tokenId, taskArgs.number);
+      await rs.wait();
+    }
+});
+
 task("mintERC20", "Mint 20")
   .addPositionalParam("contractAddress", "address of contract", "", types.string)
   .addPositionalParam("number", "amount tokens", 1, types.int)

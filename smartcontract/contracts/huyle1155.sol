@@ -151,6 +151,12 @@ contract VNGHero1155 is ERC1155, AccessControl{
         _mint(_msgSender(), newItemId, amount, bytes(""));
     }
 
+    function mintVer2(uint256 tokenId, uint256 amount) public {
+        uint256 c = characters[tokenId];
+        require(c != 0, "TokenId is not exist!");
+        _mint(_msgSender(), tokenId, amount, bytes(""));
+    }
+
     function uri(uint256 tokenId) public view virtual override returns (string memory) {
         (uint256 _gender, uint256 _hair, uint256 _eyeWear, uint256 _face, uint256 _outfit, string memory _image) = getCharacter(tokenId);
         bytes memory dataURI = abi.encodePacked(
