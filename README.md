@@ -36,16 +36,16 @@
 
 ### Mint 721, 1155
 **Command** 
-* ```npm run mint721-{chain_name} {contract_address} {number_of_nfts}```
-* ```npm run mint1155-{chain_name} {contract_address} {number_of_nfts}```
+* ```npm run mint721-{chain_name} {contract_address} {number_of_nfts} [{forAddress}]```
+* ```npm run mint1155-{chain_name} {contract_address} {number_of_nfts} [{forAddress}]```
 
 **Example**
 * Chain dev: 
-    ```npm run mint721-dev 0xE7cEdcbAB4BAe413B5C7c2BF09da9B7e7dd27775 5```
+    ```npm run mint721-dev 0xE7cEdcbAB4BAe413B5C7c2BF09da9B7e7dd27775 5 0x0676a8136eC8C25918eA04D15Ed3c8e7E4DE9f46```
 * Chain avaxtest:
-        ```npm run mint721-avaxtest 0xF3d43c147a0A377B4Eae8A44B778b575C1b59d72 5```
+        ```npm run mint721-avaxtest 0xF3d43c147a0A377B4Eae8A44B778b575C1b59d72 5 0x0676a8136eC8C25918eA04D15Ed3c8e7E4DE9f46```
 * Chain bsctest:
-    ```npm run mint721-bsctest 0x6f822246D4351e05e7fAb3eAccE7256965BE9780 5```
+    ```npm run mint721-bsctest 0x6f822246D4351e05e7fAb3eAccE7256965BE9780 5 0x0676a8136eC8C25918eA04D15Ed3c8e7E4DE9f46```
 
 ### Deploy, mint ERC20
 **Command**

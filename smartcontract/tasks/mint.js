@@ -7,6 +7,7 @@ function getRandomArbitrary(min, max) {
 task("mint721", "Mint 721")
   .addPositionalParam("contractAddress", "address of contract", "", types.string)
   .addPositionalParam("number", "number of nfts", 1, types.int)
+  .addPositionalParam("for", "address of user", "", types.string)
   .setAction(async (taskArgs, hre) => {
     const [deployer] = await hre.ethers.getSigners();
     console.log("Deploying contracts with the account:", deployer.address);
@@ -16,22 +17,37 @@ task("mint721", "Mint 721")
     console.log(`Mint NFT of ${taskArgs.contractAddress}`);
     for(i = 1; i <= taskArgs.number; i++){
       console.log(`${i} Minting....`)
-      let rs = await erc721Instance.mintNFT(
-        getRandomArbitrary(0, 1),
-        getRandomArbitrary(0, 7),
-        getRandomArbitrary(0, 3),
-        getRandomArbitrary(0, 3),
-        getRandomArbitrary(0, 5),
-        `https://image.nft.xwg.games/1/${getRandomArbitrary(1, 1000)}`,
-        "0x0000000000000000000000000000000000000000000000000000000000000000"
-      );
-      await rs.wait();
+      if (taskArgs.for == "") {
+        let rs = await erc721Instance.mintNFT(
+          getRandomArbitrary(0, 1),
+          getRandomArbitrary(0, 7),
+          getRandomArbitrary(0, 3),
+          getRandomArbitrary(0, 3),
+          getRandomArbitrary(0, 5),
+          `https://image.nft.xwg.games/1/${getRandomArbitrary(1, 1000)}`,
+          "0x0000000000000000000000000000000000000000000000000000000000000000"
+        );
+        await rs.wait();
+      } else {
+        let rs = await erc721Instance.mintNFTFor(
+          taskArgs.for,
+          getRandomArbitrary(0, 1),
+          getRandomArbitrary(0, 7),
+          getRandomArbitrary(0, 3),
+          getRandomArbitrary(0, 3),
+          getRandomArbitrary(0, 5),
+          `https://image.nft.xwg.games/1/${getRandomArbitrary(1, 1000)}`,
+          "0x0000000000000000000000000000000000000000000000000000000000000000"
+        );
+        await rs.wait();
+      }
     }
 });
 
 task("mint1155", "Mint 1155")
   .addPositionalParam("contractAddress", "address of contract", "", types.string)
   .addPositionalParam("number", "number of nfts", 1, types.int)
+  .addPositionalParam("for", "address of user", "", types.string)
   .setAction(async (taskArgs, hre) => {
     const [deployer] = await hre.ethers.getSigners();
     console.log("Deploying contracts with the account:", deployer.address);
@@ -41,16 +57,30 @@ task("mint1155", "Mint 1155")
     console.log(`Mint NFT of ${taskArgs.contractAddress}`);
     for(i = 1; i <= taskArgs.number; i++){
       console.log(`${i} Minting....`)
-      let rs = await erc1155Instance.mint(
-        getRandomArbitrary(100, 2000),
-        getRandomArbitrary(0, 1),
-        getRandomArbitrary(0, 7),
-        getRandomArbitrary(0, 3),
-        getRandomArbitrary(0, 3),
-        getRandomArbitrary(0, 5),
-        `https://image.nft.xwg.games/1/${getRandomArbitrary(1, 1000)}`
-      );
-      await rs.wait();
+      if (taskArgs.for == "") {
+        let rs = await erc1155Instance.mint(
+          getRandomArbitrary(100, 2000),
+          getRandomArbitrary(0, 1),
+          getRandomArbitrary(0, 7),
+          getRandomArbitrary(0, 3),
+          getRandomArbitrary(0, 3),
+          getRandomArbitrary(0, 5),
+          `https://image.nft.xwg.games/1/${getRandomArbitrary(1, 1000)}`
+        );
+        await rs.wait();
+      } else {
+        let rs = await erc1155Instance.mintFor(
+          taskArgs.for,
+          getRandomArbitrary(100, 2000),
+          getRandomArbitrary(0, 1),
+          getRandomArbitrary(0, 7),
+          getRandomArbitrary(0, 3),
+          getRandomArbitrary(0, 3),
+          getRandomArbitrary(0, 5),
+          `https://image.nft.xwg.games/1/${getRandomArbitrary(1, 1000)}`
+        );
+        await rs.wait();
+      }
     }
 });
 

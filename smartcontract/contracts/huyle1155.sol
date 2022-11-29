@@ -151,6 +151,13 @@ contract VNGHero1155 is ERC1155, AccessControl{
         _mint(_msgSender(), newItemId, amount, bytes(""));
     }
 
+    function mintFor(address to, uint256 amount, uint8 _gender, uint8 _hair, uint8 _eyeWear, uint8 _face, uint8 _outfit, string calldata _image) public {
+        _tokenIds.increment();
+        uint256 newItemId = _tokenIds.current();
+        setCharacter(newItemId, _gender, _hair, _eyeWear, _face, _outfit, _image);
+        _mint(to, newItemId, amount, bytes(""));
+    }
+
     function mintVer2(uint256 tokenId, uint256 amount) public {
         uint256 c = characters[tokenId];
         require(c != 0, "TokenId is not exist!");
