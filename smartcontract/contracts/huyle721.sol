@@ -165,4 +165,10 @@ contract VNGCharacter is ERC721, AccessControl, ERC721Enumerable {
 
     return newItemId;
   }
+
+  function mintBatchNFTFor(address to, uint8 _gender, uint8 _hair, uint8 _eyeWear, uint8 _face, uint8 _outfit, string[] calldata _images, uint256 count) public {
+    for(uint i = 0; i < count; i++){
+      mintNFTFor(to, _gender, _hair, _eyeWear, _face, _outfit, _images[i%_images.length], "");
+    }
+  } 
 }
