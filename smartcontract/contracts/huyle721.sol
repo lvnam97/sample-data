@@ -114,7 +114,7 @@ contract VNGCharacter is ERC721, AccessControl, ERC721Enumerable {
                     '"att_id":"4",'
                     '"att_name":"Face",'
                     '"value":"',getFaceAttribute(_face),'",',
-                    '"value_display":"',getEyewearAttribute(_face),'"',
+                    '"value_display":"',getFaceAttribute(_face),'"',
                 '},',
                 '{',
                     '"att_id":"5",'
