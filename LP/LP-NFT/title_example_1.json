@@ -1,0 +1,25 @@
+{
+    "name": "Title 1",
+    "image": "image-url",
+    "description": "",
+    "attributes": [
+      {
+        "att_id": "1",
+        "att_name": "Source",
+        "value": 0,
+        "display_value": "Event"
+      },
+      {
+        "att_id": "2",
+        "att_name": "Rarity",
+        "value": 1,
+        "display_value": "Uncommon"
+      },
+      {
+        "att_id": "3",
+        "att_name": "Quantity type",
+        "value": 0,
+        "display_value": "Unlimited"
+      }
+    ]
+  }

@@ -1,0 +1,304 @@
+[
+    {
+        "name": "Sex",
+        "values": [
+            {
+                "value": 0,
+                "display_value": "Male"
+            },
+            {
+                "value": 1,
+                "display_value": "Female"
+            }
+        ]
+    },
+    {
+        "name": "Outfit (M)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "MO0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "MO0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "MO1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "MO1C02"
+            }
+        ]
+    },
+    {
+        "name": "Face (M)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "MF0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "MF0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "MF1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "MF1C02"
+            }
+        ]
+    },
+    {
+        "name": "Shoes (M)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "MS0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "MS0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "MS1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "MS1C02"
+            }
+        ]
+    },
+    {
+        "name": "Hair (M)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "MH0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "MH0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "MH1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "MH1C02"
+            }
+        ]
+    },
+    {
+        "name": "Imprint (M)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "MI0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "MI0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "MI1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "MI1C02"
+            }
+        ]
+    },
+    {
+        "name": "Assets (M)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "MS0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "MS0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "MS1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "MS1C02"
+            }
+        ]
+    },
+    {
+        "name": "Outfit (F)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "FO0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "FO0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "FO1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "FO1C02"
+            }
+        ]
+    },
+    {
+        "name": "Face (F)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "F0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "FF0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "FF1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "FF1C02"
+            }
+        ]
+    },
+    {
+        "name": "Shoes (F)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "FS0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "FS0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "FS1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "FS1C02"
+            }
+        ]
+    },
+    {
+        "name": "Hair (F)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "FH0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "FH0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "FH1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "FH1C02"
+            }
+        ]
+    },
+    {
+        "name": "Imprint (F)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "FI0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "FI0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "FI1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "FI1C02"
+            }
+        ]
+    },
+    {
+        "name": "Assets (F)",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "FS0C01"
+            },
+            {
+                "value": 2,
+                "display_value": "FS0C02"
+            },
+            {
+                "value": 11,
+                "display_value": "FS1C01"
+            },
+            {
+                "value": 12,
+                "display_value": "FS1C02"
+            }
+        ]
+    },
+    {
+        "name": "PetAtt",
+        "values": [
+            {
+                "value": 1,
+                "display_value": "M01"
+            },
+            {
+                "value": 2,
+                "display_value": "M02"
+            },{
+                "value": 3,
+                "display_value": "M02"
+            },{
+                "value": 4,
+                "display_value": "M02"
+            },{
+                "value": 5,
+                "display_value": "M02"
+            },{
+                "value": 6,
+                "display_value": "F01"
+            },{
+                "value": 7,
+                "display_value": "F02"
+            },{
+                "value": 8,
+                "display_value": "F03"
+            },{
+                "value": 9,
+                "display_value": "F04"
+            },{
+                "value": 10,
+                "display_value": "F05"
+            }
+        ]
+    }
+]

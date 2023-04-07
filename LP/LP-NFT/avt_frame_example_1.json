@@ -1,0 +1,19 @@
+{
+    "name": "Frame 1",
+    "image": "image-url",
+    "description": "",
+    "attributes": [
+      {
+        "att_id": "1",
+        "att_name": "Rarity",
+        "value": 6,
+        "display_value": "Unique"
+      },
+      {
+        "att_id": "2",
+        "att_name": "Quantity type",
+        "value": 0,
+        "display_value": "Unlimited"
+      }
+    ]
+  }

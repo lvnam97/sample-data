@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Source",
+        "values":[
+            {
+                "value": 0,
+                "display_value": "Event"
+            },
+            {
+                "value": 1,
+                "display_value": "Achievements"
+            },
+            {
+                "value": 2,
+                "display_value": "Tournaments"
+            }
+        ]
+    },
+    {
+        "name": "Rarity",
+        "values": [
+            {
+                "value": 0,
+                "display_value": "Common"
+            },
+            {
+                "value": 1,
+                "display_value": "Uncommon"
+            },
+            {
+                "value": 2,
+                "display_value": "Rare"
+            },
+            {
+                "value": 3,
+                "display_value": "Epic"
+            },
+            {
+                "value": 4,
+                "display_value": "Legend"
+            },
+            {
+                "value": 5,
+                "display_value": "Immortal"
+            },
+            {
+                "value": 6,
+                "display_value": "Unique"
+            }
+        ]
+    },
+    {
+        "name": "Quantity type",
+        "values": [
+            {
+                "value": 0,
+                "display_value": "Unlimited"
+            },
+            {
+                "value": 1,
+                "display_value": "Limited"
+            }
+        ]
+    }
+]

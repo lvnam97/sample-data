@@ -1,0 +1,48 @@
+{
+    "name": "Avatar",
+    "image": "image-url",
+    "description": "",
+    "attributes": [
+      {
+        "att_id": "1",
+        "att_name": "Sex",
+        "value": 0,
+        "display_value": "Male"
+      },
+      {
+        "att_id": "2",
+        "att_name": "Outfit (M)",
+        "value": 1
+      },
+      {
+        "att_id": "3",
+        "att_name": "Face (M)",
+        "value": 1
+      },
+      {
+        "att_id": "4",
+        "att_name": "Shoes (M)",
+        "value": 1
+      },
+      {
+        "att_id": "5",
+        "att_name": "Hair (M)",
+        "value": 1
+      },
+      {
+        "att_id": "6",
+        "att_name": "Imprint (M)",
+        "value": 1
+      },
+      {
+        "att_id": "7",
+        "att_name": "Assets (M)",
+        "value": 1
+      },
+      {
+        "att_id": "8",
+        "att_name": "PetAtt",
+        "value": 1
+      }
+    ]
+  }
